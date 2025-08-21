@@ -1,1 +1,22 @@
-### Python LangGraph Tutorial ######
+## Python LangGraph Tutorial ##
+
+### Elements of LangGraph ###
+
+1. **State:** It is shared data structure that holds the current information or context of the entire application.
+2. **Nodes:** Nodes are individual functions or operations that perform specific task within the graph
+3. **Edges:** Edges are connection between nodes that determines the flow of execution.
+4. **Conditional Edges:** Specialized connections taht decide the next node to execute.
+5. **START:** virtual entry point in LangGraph, making where the workflow begins.
+6. **END:** Signifies the concludion of the workflow in LangGraph.
+7. **Tools:** Specialized functions or utilites that nodes can utilize to perform specific tasks such as fetching data from API.
+8. **ToolNode:** Special kind of node whose main job is to run a tool. It connects the tools output in the state whcih will be used by another state.
+9. **StateGraph:** class in LangGraph used to build the workflow.
+10. **Runnable:** fundamental building blocks, allowing for us to create modular system.
+
+
+**Types of Messages:**
+
+1. Human Message
+2. AI Message
+3. Function Message
+4. Tool Message
