@@ -25,3 +25,12 @@ pip install langgraph langchain-core langchain_openai langchain_community
 3. Function Message: Represents the response of a function call
 4. Tool Message: Similar to function messages but specific for a tool
 5. System Message: Used to provide instructions or context to the model
+
+**Topics Covered:**
+1. Simple Node Graph:
+    The simple node graph illustrates the basic of LangGraph. 
+2. Multi Node Graph:
+    This 
+3. Conditional Node Graph:
+
+4. Loop Concept in Lang Graph:
