@@ -34,3 +34,9 @@ pip install langgraph langchain-core langchain_openai langchain_community
 3. Conditional Node Graph:
 
 4. Loop Concept in Lang Graph:
+
+5. Simple AI Bot
+    - Define state structure with a list of HumanMessages object
+    - Initialize the Lama3 with OpenAI lama
+    - Sending and handling different types of messages
+    - Building and Compiling the graph of an Agent
