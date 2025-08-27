@@ -30,9 +30,9 @@ pip install langgraph langchain-core langchain_openai langchain_community
 1. Simple Node Graph:
     The simple node graph illustrates the basic of LangGraph. 
 2. Multi Node Graph:
-    This 
+    This is multiple sequential nodes in a graph.
 3. Conditional Node Graph:
-
+    
 4. Loop Concept in Lang Graph:
 
 5. Simple AI Bot
@@ -40,3 +40,20 @@ pip install langgraph langchain-core langchain_openai langchain_community
     - Initialize the Lama3 with OpenAI lama
     - Sending and handling different types of messages
     - Building and Compiling the graph of an Agent
+
+```
+    ollama pull llama3.1
+    pip install -U langchain-ollama
+```
+
+After this setup, we can create llm by the following code:
+
+```
+from langchain_ollama import ChatOllama
+llm = ChatOllama(
+    model="llama3.1:latest", 
+    validate_model_on_init = True,
+    temperature = 0.8,
+    num_predict = 256,
+)
+```
