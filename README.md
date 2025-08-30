@@ -57,3 +57,8 @@ llm = ChatOllama(
     num_predict = 256,
 )
 ```
+6. ReAct Agent (Reacting and Reasoning Agent):
+    - Learn how to create Tools in LangGraph
+    - How to create ReAct Graph
+    - Work with different types of Messages such as ToolMessages
+    - Test out roboustness of our graph
