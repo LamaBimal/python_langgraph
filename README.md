@@ -62,3 +62,5 @@ llm = ChatOllama(
     - How to create ReAct Graph
     - Work with different types of Messages such as ToolMessages
     - Test out roboustness of our graph
+
+7. Drafter Agent
