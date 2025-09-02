@@ -2,6 +2,15 @@
 LangGraph is a framework that let us build AI agents as graphs, where each node does a task and each edges decides what happens next.
 
 ## Installation ##
+Enable virtual environment
+```
+Command: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process -Force
+& .\.venv\Scripts\Activate.ps1
+
+Alternative Command: .venv\Scripts\activate.bat
+
+```
+
 pip install langgraph langchain-core langchain_openai langchain_community
 
 ### Elements of LangGraph ###
@@ -64,3 +73,32 @@ llm = ChatOllama(
     - Test out roboustness of our graph
 
 7. Drafter Agent
+8. RAG
+
+    Retrieval Augmented Generation is the innovative approach in the field of natural language processing (NLP) that combines the strengths of the retrieval-based and generation based model to enhance the quality of the generated text.
+
+    How does Retrieval Augmented Generation work?
+    ![alt text](image.png)
+
+    The system first searches external sources for relevant information based on the user's query instead of relying only on the existing training data.
+
+
+    We have downloaded the mxbai-embed-large from mixedbread.ai
+    Following command is used to download the embedding model
+
+```
+ollama pull mxbai-embed-large
+ ```
+
+    Basic example of initializing the model as:
+
+```
+import ollama
+
+response = ollama.embeddings(
+    model='mxbai-embed-large',
+    prompt='Represent this sentence for searching       relevant passages: The sky is blue because of Rayleigh scattering'
+    )
+
+print(response)
+```

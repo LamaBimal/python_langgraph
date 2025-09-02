@@ -1,3 +1,8 @@
 matplotlib
 networkx
 langgraph
+langchain-ollama
+langchain-community
+langchain-core
+chromadb
+
